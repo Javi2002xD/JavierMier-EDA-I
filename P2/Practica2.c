@@ -17,7 +17,7 @@ int columns, lines, selection;
 size_t main(){
 int option = 1;
 	while(option==1){
-		printf("\nMovimientos de Alfil y Torre\n");
+		printf("\nMovimientos de Rey y Reina\n");
 		printf("Elije que pieza deseas mover\n");
 		printf("1)Reina, 2)Rey, 3)Salir\n");
 		scanf("%d", &selection);
