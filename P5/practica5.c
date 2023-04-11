@@ -31,13 +31,6 @@ int main(){
 		if(option>2)
 			return(fprintf(stderr, "No está en las opciones"));
 	}
-	/*push(stack);
-	push(stack);
-	push(stack);
-
-	//printf("%d eliminado de la pila\n", pop(stack));
-    printf("El elemento al tope es: %d\n", peek(stack));
-*/
 	return 0;
 }
 struct Stack* createStack(unsigned capacity){
