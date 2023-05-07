@@ -74,16 +74,20 @@ void traverse(struct Node* last) {
 
 void search(struct Node* last, int value) {
   struct Node* p;
+  int v=0;
   if (last == NULL) {
     printf("La lista esta vacia");
     return;
   }
   p = last->next;
   do {
-  printf("%d -> ", p->data);
   p = p->next;
-  if(p->data==value) printf("\nEl valor se encuentra en la estructura\n");
+    if(p->data==value){
+      printf("\nEl valor se encuentra en la estructura\n");
+      v=1;
+    } 
   } while (p != last->next);
+  if(v==0) printf("\nEl valor no está en la estructura\n");
 }
 
 int menu(){
